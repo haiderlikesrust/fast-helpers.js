@@ -1,0 +1,20 @@
+{
+  "name": "fast-helpers.js",
+  "version": "1.0.0",
+  "description": "Pure JavaScript functions to help your code!",
+  "main": "index.js",
+  "keywords": ["javascript helpers", "pure functions", "util", "modules"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haider-Ali-Dev/fast-helpers.js.git"
+  },
+  "author": "Haider Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haider-Ali-Dev/fast-helpers.js/issues"
+  },
+  "homepage": "https://github.com/Haider-Ali-Dev/fast-helpers.js#readme"
+}
