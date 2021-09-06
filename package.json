@@ -4,6 +4,7 @@
   "description": "Pure JavaScript functions to help your code!",
   "main": "index.js",
   "keywords": ["javascript helpers", "pure functions", "util", "modules"],
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
