@@ -20,7 +20,7 @@ for (number of range(0, 10)) {
 
 
 ```js
-import { divide } from 'fast-helpers.js';
+import { divide } from 'fast-helpers.js/math.js';
 
 divide((number=10, divideByNumber=2, array=null, divideArray=false) // Returns 5;
 // Now lets get into whats array and divideArray//
@@ -51,14 +51,14 @@ divide((number=null, divideByNumber=2, array=null, divideArray=false) // this re
 
 
 ```js
-import random from 'fast-helpers.js';
+import random from 'fast-helpers.js/random.js';
 
 console.log(random.randint(1, 10))
 ```
 
 
 ```js
-import random from 'fast-helpers.js';
+import random from 'fast-helpers.js/random.js';
 const meme = [
     "Very Funny",
     "Yes LOLOL",
