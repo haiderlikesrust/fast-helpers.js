@@ -9,7 +9,7 @@ Python has a range method, ruby has a range method. Why not JavaScript?
 
 
 ```js
-const { range } =  require("fast-helpers.js");
+import { range } from "fast-helpers.js";
 for (number of range(0, 10)) {
     console.log(number);
 }

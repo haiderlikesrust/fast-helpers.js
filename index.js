@@ -25,12 +25,5 @@ function* evenGenerator(till) {
     }
 }
 
-export const range = range;
-export const oddGenerator = oddGenerator;
-export const evenGenerator = evenGenerator;
 
-module.exports = {
-    range: range,
-    oddGenerator: oddGenerator,
-    evenGenerator: evenGenerator
-};
+export { range, oddGenerator, evenGenerator };

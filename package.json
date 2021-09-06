@@ -1,6 +1,6 @@
 {
   "name": "fast-helpers.js",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Pure JavaScript functions to help your code!",
   "main": "index.js",
   "keywords": ["javascript helpers", "pure functions", "util", "modules"],
