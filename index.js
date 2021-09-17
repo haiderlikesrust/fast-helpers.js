@@ -1,29 +1,4 @@
-const range = (start=0, end) => {
-    let arr = [];
-    while (start != end) {
-        arr.push(start)
-        start++
-    };
-    return arr
-}
-
-function* oddGenerator(till) {
-    let returnedArray = range(0, till);
-    for (let number of returnedArray) {
-        if (number % 2 !== 0) {
-            yield number
-        }
-    }
-}
-
-function* evenGenerator(till) {
-    let returnedArray = range(0, till) 
-    for (let number of returnedArray) {
-        if (number % 2 === 0) {
-            yield number;
-        }
-    }
-}
-
-
-export { range, oddGenerator, evenGenerator };
+export const  { sum, divide, multiply, sub, roundOff, } = './functions/math.js'
+export const { random } = './functions/random.js'
+export const { range, oddGenerator, evenGenerator } = './functions/number.js'
+export const { arrayToString, objectToArray } = './functions/arrayFunc.js'

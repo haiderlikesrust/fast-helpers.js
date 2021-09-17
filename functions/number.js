@@ -1,3 +1,9 @@
+/**
+ * Range gives you an array which has all the numbers from start param to end param.
+ * @param {number} start 
+ * @param {number} end 
+ * @returns {object}
+ */
 const range = (start=0, end) => {
     let arr = [];
     while (start != end) {
@@ -7,6 +13,12 @@ const range = (start=0, end) => {
     return arr
 }
 
+/**
+ * Returns Generator Object for odd numbers
+ * @param {number} till 
+ * @returns {Generator}
+ */
+
 function* oddGenerator(till) {
     let returnedArray = range(0, till);
     for (let number of returnedArray) {
@@ -15,6 +27,12 @@ function* oddGenerator(till) {
         }
     }
 }
+
+/**
+ * Returns Generator Object for even numbers
+ * @param {number} till 
+ * @returns {Generator}
+ */
 
 function* evenGenerator(till) {
     let returnedArray = range(0, till) 

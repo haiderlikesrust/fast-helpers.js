@@ -1,6 +1,6 @@
 
 /**
- * @param {object} array
+ * @param {Array} array
  * @returns {string}
  * */
 const arrayToString = (array) => {

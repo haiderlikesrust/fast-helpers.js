@@ -1,3 +1,10 @@
+
+/**
+ * Sums everything in an array and returns its sum
+ * @param {Array} array 
+ * @returns {number}
+ */
+
 const sum = (array) => {
     let acc = 0;
     array.forEach(element => {
@@ -6,6 +13,14 @@ const sum = (array) => {
     return acc
 }
 
+/**
+ * 
+ * @param {number} number 
+ * @param {number} divideByNumber 
+ * @param {Array} array 
+ * @param {boolean} divideArray 
+ * @returns {object[][]}
+ */
 const divide = (number=null, divideByNumber=null, array=null, divideArray=false) => {
     if (divideArray) {
         let answerArray = []

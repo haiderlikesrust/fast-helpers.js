@@ -1,5 +1,11 @@
 ### fast-helpers.js
 
+
+**UPDATES**
+
+*Added JSDOC, Optimized the files, removed bugs, made a single import file and added new Array Functions*
+
+
 *Its Open Source, please contribute if you can [Here](https://github.com/Haider-Ali-Dev/fast-helps.js)*
 
 
@@ -20,7 +26,7 @@ for (number of range(0, 10)) {
 
 
 ```js
-import { divide } from 'fast-helpers.js/math.js';
+import { divide } from 'fast-helpers.js';
 
 divide((number=10, divideByNumber=2, array=null, divideArray=false) // Returns 5;
 // Now lets get into whats array and divideArray//
@@ -51,19 +57,33 @@ divide((number=null, divideByNumber=2, array=null, divideArray=false) // this re
 
 
 ```js
-import random from 'fast-helpers.js/random.js';
+import {random} from 'fast-helpers.js/random.js';
 
 console.log(random.randint(1, 10))
 ```
 
 
 ```js
-import random from 'fast-helpers.js/random.js';
+import {random} from 'fast-helpers.js';
 const meme = [
     "Very Funny",
     "Yes LOLOL",
     "SHEESH"
 ]
 console.log(random.choice(meme))
+```
+
+
+**Introducing Array Function**
+
+
+*We have made few of them but in future alot may come*
+
+
+```js
+import { arrayToString, objectToArray } from 'fast-helpers.js'
+arrayToString(['Hello', 'World']) //Output "Hello World"
+objectToArray({a:1, b:2}) //Output [[a, 1], [b, 2]]
+
 ```
 
