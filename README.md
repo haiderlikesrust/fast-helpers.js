@@ -57,7 +57,7 @@ divide((number=null, divideByNumber=2, array=null, divideArray=false) // this re
 
 
 ```js
-import {random} from 'fast-helpers.js/random.js';
+import {random} from 'fast-helpers.js/random.ts';
 
 console.log(random.randint(1, 10))
 ```
