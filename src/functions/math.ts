@@ -1,4 +1,7 @@
-// Sums everything in an array and returns its sum
+/**
+ * Sums everything in an array and returns its sum
+ * @param array any[]
+ */
 export const sum = (array: any[]): number => {
     let acc = 0;
     array.forEach(element => {
@@ -6,7 +9,6 @@ export const sum = (array: any[]): number => {
     });
     return acc
 }
-
 
 export const divide = (number: number, divideByNumber: number, array: Array<any>, divideArray: boolean = false) => {
     if (divideArray) {
@@ -45,7 +47,6 @@ export const multiply = (number: number, multipliedByNumber: number, array: numb
 export const sub = (number: number, subtractedBy: number) => {
     return number - subtractedBy;
 }
-
 
 export const roundOff = (number: number, array: number[], roundArray=false) => {
     if (roundArray) {

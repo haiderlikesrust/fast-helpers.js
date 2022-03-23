@@ -1,3 +1,7 @@
+/**
+ * Changes an array to a string.
+ * @param array any[] The array to be converted.
+ */
 export const arrayToString = (array: any[]): string => {
     let emptyStyring = ""
     array.forEach(element => {
@@ -6,7 +10,10 @@ export const arrayToString = (array: any[]): string => {
     return emptyStyring
 }
 
-// Changes Object to Array
+/**
+ * Changes Object to Array
+ * @param object The object to be converted.
+ */
 export const objectToArray = (object: object): any[][] => {
     const em = []
     for (let i=0; Object.keys(object).length > i; i++) {
