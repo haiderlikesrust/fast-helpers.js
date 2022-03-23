@@ -2,12 +2,21 @@
   "name": "fast-helpers.js",
   "version": "1.2.0",
   "description": "Pure JavaScript functions to help your code!",
-  "main": "index.js",
-  "keywords": ["javascript helpers", "pure functions", "util", "modules"
-  ,"math", "array", "fast math"],
-  "type": "module",
+  "main": "dist/index.js",
+  "keywords": [
+    "javascript helpers",
+    "pure functions",
+    "util",
+    "modules",
+    "math",
+    "array",
+    "fast math"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "tsc --build --clean",
+    "build": "npm run clean && tsc --build",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -18,5 +27,10 @@
   "bugs": {
     "url": "https://github.com/Haider-Ali-Dev/fast-helpers.js/issues"
   },
-  "homepage": "https://github.com/Haider-Ali-Dev/fast-helpers.js#readme"
+  "homepage": "https://github.com/Haider-Ali-Dev/fast-helpers.js#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.22",
+    "tslib": "^2.3.1",
+    "typescript": "^4.6.2"
+  }
 }

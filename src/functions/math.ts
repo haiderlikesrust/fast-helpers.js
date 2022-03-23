@@ -1,11 +1,5 @@
-
-/**
- * Sums everything in an array and returns its sum
- * @param {Array} array 
- * @returns {number}
- */
-
-const sum = (array) => {
+// Sums everything in an array and returns its sum
+export const sum = (array: any[]): number => {
     let acc = 0;
     array.forEach(element => {
         acc += element;
@@ -13,38 +7,29 @@ const sum = (array) => {
     return acc
 }
 
-/**
- * 
- * @param {number} number 
- * @param {number} divideByNumber 
- * @param {Array} array 
- * @param {boolean} divideArray 
- * @returns {object[][]}
- */
-const divide = (number=null, divideByNumber=null, array=null, divideArray=false) => {
-    if (divideArray) {
-        let answerArray = []
-        let remainderArray = [];
 
-        array.forEach((element) => {
+export const divide = (number: number, divideByNumber: number, array: Array<any>, divideArray: boolean = false) => {
+    if (divideArray) {
+        let answerArray: number[] = []
+        let remainderArray: number[] = [];
+
+        array.forEach((element: number) => {
             let answer = element / divideByNumber;
             let remainder = element % divideByNumber;
             answerArray.push(answer);
             remainderArray.push(remainder);
         })
-        let answerValue = {
+        return {
             answer: answerArray,
             remainder: remainderArray
-        };
-        return answerValue
+        }
 
     } else {
         return number / divideByNumber;
     }
 }
 
-
-const multiply = (number=null, multipliedByNumber=null, array=null, multiArray=false) => {
+export const multiply = (number: number, multipliedByNumber: number, array: number[], multiArray=false) => {
     if (multiArray) {
         let answerArray = [{}];
         array.forEach(ele => {
@@ -57,14 +42,14 @@ const multiply = (number=null, multipliedByNumber=null, array=null, multiArray=f
     }
 }
 
-const sub = (number, subtractedBy) => {
+export const sub = (number: number, subtractedBy: number) => {
     return number - subtractedBy;
 }
 
 
-const roundOff = (number=null,  array=null, roundArray=false) => {
+export const roundOff = (number: number, array: number[], roundArray=false) => {
     if (roundArray) {
-        let answerArray = [];
+        let answerArray: number[] = [];
         array.forEach(ele => {
             let answer = Math.round(ele);
             answerArray.push(answer);
@@ -74,13 +59,3 @@ const roundOff = (number=null,  array=null, roundArray=false) => {
         return Math.round(number);
     }
 }
-
-
-export {
-    sum,
-    divide,
-    multiply,
-    sub,
-    roundOff,
-
-};
